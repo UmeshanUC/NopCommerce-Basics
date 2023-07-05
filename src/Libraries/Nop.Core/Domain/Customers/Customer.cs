@@ -239,6 +239,17 @@ namespace Nop.Core.Domain.Customers
         /// </summary>
         public int? ShippingAddressId { get; set; }
 
+        /// <summary>
+        /// Gets or sets the Age
+        /// </summary>
+        public int Age { get; set; }
+
+        /// <summary>
+        /// Gets or sets the NIC No.
+        /// </summary>
+        public string Nic { get; set; }
+
+
         #region Custom properties
 
         /// <summary>

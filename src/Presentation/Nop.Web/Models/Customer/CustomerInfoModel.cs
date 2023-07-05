@@ -61,6 +61,11 @@ namespace Nop.Web.Models.Customer
             return CommonHelper.ParseDate(DateOfBirthYear, DateOfBirthMonth, DateOfBirthDay);
         }
 
+        [NopResourceDisplayName("Account.Fields.Age")]
+        public int Age { get; set; }
+        [NopResourceDisplayName("Account.Fields.Nic")]
+        public string Nic { get; set; }
+
         public bool CompanyEnabled { get; set; }
         public bool CompanyRequired { get; set; }
         [NopResourceDisplayName("Account.Fields.Company")]

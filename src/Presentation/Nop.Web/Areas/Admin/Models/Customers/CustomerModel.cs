@@ -85,6 +85,12 @@ namespace Nop.Web.Areas.Admin.Models.Customers
         [NopResourceDisplayName("Admin.Customers.Customers.Fields.DateOfBirth")]
         public DateTime? DateOfBirth { get; set; }
 
+        [NopResourceDisplayName("Admin.Customers.Customers.Fields.Age")]
+        public int Age { get; set; }
+
+        [NopResourceDisplayName("Admin.Customers.Customers.Fields.Nic")]
+        public string Nic { get; set; }
+
         public bool CompanyEnabled { get; set; }
 
         [NopResourceDisplayName("Admin.Customers.Customers.Fields.Company")]

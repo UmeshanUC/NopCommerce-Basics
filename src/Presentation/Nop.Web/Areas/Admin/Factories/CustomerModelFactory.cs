@@ -715,6 +715,8 @@ namespace Nop.Web.Areas.Admin.Factories
                     model.LastName = customer.LastName;
                     model.Gender = customer.Gender;
                     model.DateOfBirth = customer.DateOfBirth;
+                    model.Age = customer.Age;
+                    model.Nic = customer.Nic;
                     model.Company = customer.Company;
                     model.StreetAddress = customer.StreetAddress;
                     model.StreetAddress2 = customer.StreetAddress2;

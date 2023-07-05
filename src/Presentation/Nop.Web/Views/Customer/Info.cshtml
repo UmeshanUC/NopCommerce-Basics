@@ -94,6 +94,18 @@
                         <nop-required />
                         <span asp-validation-for="Email"></span>
                     </div>
+                    <div class="inputs">
+                        <label asp-for="Nic" asp-postfix=":">@T("Account.Fields.Nic")</label>
+                        <input asp-for="Nic" />
+                        <span asp-validation-for="Nic"></span>
+                        <nop-required />
+                    </div>
+                    <div class="inputs ">
+                        <label asp-for="Age" asp-postfix=":">@T("Account.Fields.Age")</label>
+                        <input asp-for="Age" />
+                        <span asp-validation-for="Age"></span>
+                        <nop-required />
+                    </div>
                     @if (!string.IsNullOrEmpty(Model.EmailToRevalidate))
                     {
                         <div class="inputs">

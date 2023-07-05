@@ -399,6 +399,9 @@ namespace Nop.Web.Areas.Admin.Controllers
                     customer.Phone = model.Phone;
                 if (_customerSettings.FaxEnabled)
                     customer.Fax = model.Fax;
+
+                customer.Age = model.Age;
+                customer.Nic = model.Nic;
                 customer.CustomCustomerAttributesXML = customerAttributesXml;
 
                 await _customerService.InsertCustomerAsync(customer);
@@ -642,6 +645,9 @@ namespace Nop.Web.Areas.Admin.Controllers
                         customer.Phone = model.Phone;
                     if (_customerSettings.FaxEnabled)
                         customer.Fax = model.Fax;
+
+                    customer.Age = model.Age;
+                    customer.Nic = model.Nic;
 
                     //custom customer attributes
                     customer.CustomCustomerAttributesXML = customerAttributesXml;

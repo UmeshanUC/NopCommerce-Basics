@@ -1281,6 +1281,11 @@ namespace Nop.Web.Controllers
                     if (_customerSettings.FaxEnabled)
                         customer.Fax = model.Fax;
 
+                    //Not added for custormer settings
+                    customer.Age = model.Age;
+                    customer.Nic = model.Nic;
+
+
                     customer.CustomCustomerAttributesXML = customerAttributesXml;
                     await _customerService.UpdateCustomerAsync(customer);
 

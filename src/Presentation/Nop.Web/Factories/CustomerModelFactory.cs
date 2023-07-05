@@ -229,6 +229,8 @@ namespace Nop.Web.Factories
                     model.DateOfBirthMonth = currentCalendar.GetMonth(dateOfBirth.Value);
                     model.DateOfBirthYear = currentCalendar.GetYear(dateOfBirth.Value);
                 }
+                model.Nic = customer.Nic;
+                model.Age = customer.Age;
                 model.Company = customer.Company;
                 model.StreetAddress = customer.StreetAddress;
                 model.StreetAddress2 = customer.StreetAddress2;

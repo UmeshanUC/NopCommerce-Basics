@@ -118,6 +118,9 @@ namespace Nop.Web.Validators.Customer
             {
                 RuleFor(x => x.Fax).NotEmpty().WithMessageAwait(localizationService.GetResourceAsync("Account.Fields.Fax.Required"));
             }
+
+            RuleFor(x => x.Age).InclusiveBetween(1,150).NotNull();
+            RuleFor(x => x.Nic).Length(0, 20).NotEmpty();
         }
     }
 }

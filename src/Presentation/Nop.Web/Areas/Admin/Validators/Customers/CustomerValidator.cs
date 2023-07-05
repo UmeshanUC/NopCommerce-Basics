@@ -121,6 +121,9 @@ namespace Nop.Web.Areas.Admin.Validators.Customers
                     .WhenAwait(async x => await IsRegisteredCustomerRoleCheckedAsync(x, customerService));
             }
 
+            RuleFor(x => x.Age).NotNull().InclusiveBetween(1, 150);
+            RuleFor(x => x.Nic).NotEmpty().Length(0, 20);
+
             SetDatabaseValidationRules<Customer>(mappingEntityAccessor);
         }
 
